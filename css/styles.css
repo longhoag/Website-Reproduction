@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+html, body {
+    background-color: #FCF4E0;
+}
+
+.global-header {
+    background-color: #3b2360;
+    padding: 2rem;
+    padding-bottom: calc(2rem - 4px);
+    text-align: center;
+    margin-bottom: 10vh;
+    width: 100vw;
+}
+
+.school-logo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1140px;
+}
+
+h1 {
+    border-bottom: 4px solid #ffc222;
+    font-size: 2.75em;
+    font-family: inherit;
+    font-weight: normal;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+
+    color: #3b2360;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.sign-in {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1px;
+    width: 25%;
+}
+
+.username {
+    margin-bottom: 10px;
+}
+
+.password {
+    margin-top: -3px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #333;
+    display: inline-block;
+    font-weight: 700;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 2em; 
+}
+
+
+input {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #000;
+
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin-top: 1px;
+    padding: 12px;
+    padding-top: 14px;
+    width: 262.5px;
+    height: 34px;
+}
+input:focus {
+    box-shadow: 0px 0px 6px #66AFE9;
+    border: 1px solid #66AFE9;
+    outline: none;
+}
+
+button {
+    color: white;
+    background-color: #31b27d;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    width: 262.5px;
+    height: 42px;
+    padding-bottom: 2px;
+}
+button:hover {
+    cursor: pointer;
+}
+button::after {
+    content: "➜";
+    display: inline-block;
+    margin-left: 0.5ch;
+    font-size: 1.5rem;
+    vertical-align: text-bottom;
+    line-height: 1.25rem;
+}
+
+
+.account-tools {
+    margin-top: 1px;
+    margin-left: 90px;
+    padding: 0px 15px;
+}
+
+h5 {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #3b2360;
+    font-size: 1.25em;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    width: 292.5px;
+}
+
+.bullet {
+    background-color: #fdc223;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-left: 1px;
+    margin-right: 7px;
+    width: 8px;
+    height: 8px;
+}
+
+a {
+    color: #4796c1;
+    font-size: 1em;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    padding: 5.2px 0px;
+    width: calc(100% - 16px);
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.account-help {
+    margin-top: 1px;
+    margin-left: 67px;
+    padding: 0px 15px;
+    width: 292.5px;
+}
+
+.account-help > p{
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    margin-top: -0.25em;
+    font-weight: 400;
+}
+
+.contact > p {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    font-variant-numeric: lining-nums;
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1200px) {
+    form {
+        width: 940px;
+    }
+
+    .sign-in, .username, .username-lable, .username-input, .password, .password-lable, .password-input, button, h5, .account-tools, .account-help, p {
+        width: 212.5px;
+    }
+
+    .username {
+        margin-top: -3px;
+        margin-bottom: -15px;
+    }
+
+    .password {
+        margin-top: -24px;
+    }
+
+    button {
+        margin-top: -44px;
+    }
+
+    h5 {
+        margin-top: -3px;
+    }
+
+    .account-tools {
+        margin-left: 96px;
+        padding: 0px 15px;
+    }
+
+    .account-help {
+        margin-left: 111px;
+        padding: 0px 15px;
+    }
+
+    .list {
+        width: 186px;
+    }
+
+    .bullet {
+        margin-top: 9px;
+    }
+
+    a {
+        line-height: 25px;
+        margin-top: -6px;
+        width: 170px;
+    }
+}
+
+
+@media (max-width: 990px) {
+    form {
+        width: 720px;
+    }
+
+    .username, .username-lable, .username-input, .password, .password-lable, .password-input, h5, .account-tools {
+        width: 157.5px;
+    }
+
+    .password {
+        margin-top: -51px;
+    }
+
+    button {
+        margin-top: -70px;
+        width: 157.5px;
+        padding: 0;
+    }
+
+    .account-tools {
+        margin-left: 62.5px;
+    }
+
+    .list {
+        width: 157.5px;
+    }
+
+    a {
+        width: 141.5px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .global-header {
+        margin-bottom: 5vh;
+    }
+
+    form {
+        width: calc(100% - 30px);
+    }
+
+    h1, .row, .sign-in, .username, .username-lable, .username-input, .password, .password-lable, .password-input, button, .account-tools, .list, p{
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.75em;
+        margin-bottom: -0.5em;
+        text-align: left;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .password {
+        margin-top: 25px;
+    }
+    
+    button {
+        margin-top: 5px;
+        padding: 11px;
+    }
+
+    .account-tools {
+        margin-top: 40px;
+        margin-left: -15px;
+    }
+
+    a {
+        width: calc(100% - 16px)
+    }
+
+    .account-help {
+        margin-top: 35px;
+        margin-bottom: 30px;
+        margin-left: -15px;
+        width: calc(100% + 15px)
+    }
+}
